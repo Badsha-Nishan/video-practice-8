@@ -54,21 +54,30 @@
           <div class="card-body w-full">
             <fieldset class="fieldset">
               <label class="label text-black text-xl">Mobile Number</label>
-              <input
-                maxlength="11"
-                minlength="11"
-                type="text"
-                class="input rounded-full bg-base-200"
-                placeholder="Enter your number"
-              />
+              <div class="flex items-center" id="target">
+                <input
+                  maxlength="11"
+                  minlength="11"
+                  type="text"
+                  id="number-input"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter your number"
+                />
+              </div>
               <br />
               <label class="label text-black text-xl">4 Digit Pin</label>
               <input
+              maxlength="4"
+              minlength="4"
+              id="pin"
                 type="password"
                 class="input rounded-full bg-base-200"
                 placeholder="Enter 4 Digit Pin"
               />
-              <button class="btn btn-primary rounded-full mt-4 text-2xl py-7">
+              <button
+                id="login-btn"
+                class="btn btn-primary rounded-full mt-4 text-2xl py-7"
+              >
                 Login
               </button>
             </fieldset>
