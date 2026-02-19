@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo</title>
 
     <!-- Tailwind -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
     <!-- Font Awsome -->
     <link
@@ -38,35 +38,44 @@
       }
     </style>
   </head>
-  <body
-    class="max-w-md border border-neutral-800 pt-52 pb-8 mx-auto bg-base-200 min-h-full"
-  >
+  <body class="max-w-md pt-52 mx-auto bg-base-200 min-h-screen">
     <header>
       <nav>
-        <div class="logo mx-auto max-w-64">
+        <div class="logo mx-auto max-w-64 pb-8">
           <img src="./assets/Logo-full.png" alt="" />
         </div>
       </nav>
     </header>
     <main>
       <section>
-        <div class="hero bg-base-200 min-h-screen">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-              <div class="card-body">
-                <fieldset class="fieldset">
-                  <label class="label">Email</label>
-                  <input type="email" class="input" placeholder="Email" />
-                  <label class="label">Password</label>
-                  <input type="password" class="input" placeholder="Password" />
-                  <div><a class="link link-hover">Forgot password?</a></div>
-                  <button class="btn btn-neutral mt-4">Login</button>
-                </fieldset>
-              </div>
-            </div>
+        <div
+          class="card bg-base-100 w-full max-w-sm mx-auto shrink-0 shadow-2xl"
+        >
+          <div class="card-body w-full">
+            <fieldset class="fieldset">
+              <label class="label text-black text-xl">Mobile Number</label>
+              <input
+                maxlength="11"
+                minlength="11"
+                type="text"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter your number"
+              />
+              <br />
+              <label class="label text-black text-xl">4 Digit Pin</label>
+              <input
+                type="password"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter 4 Digit Pin"
+              />
+              <button class="btn btn-primary rounded-full mt-4 text-2xl py-7">
+                Login
+              </button>
+            </fieldset>
           </div>
         </div>
       </section>
     </main>
+    <script src="./login.js"></script>
   </body>
 </html>
