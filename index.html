@@ -24,14 +24,49 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
       * {
         font-family: "Outfit", sans-serif;
       }
     </style>
   </head>
-  <body>
-
-    
+  <body
+    class="max-w-md border border-neutral-800 pt-52 pb-8 mx-auto bg-base-200 min-h-full"
+  >
+    <header>
+      <nav>
+        <div class="logo mx-auto max-w-64">
+          <img src="./assets/Logo-full.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Email</label>
+                  <input type="email" class="input" placeholder="Email" />
+                  <label class="label">Password</label>
+                  <input type="password" class="input" placeholder="Password" />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button class="btn btn-neutral mt-4">Login</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
