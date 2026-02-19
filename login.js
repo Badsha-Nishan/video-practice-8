@@ -21,5 +21,7 @@ const login = document
       alert("Invalid Pin");
     } else {
       alert("Login Successfully");
+      window.location.assign("./home.html");
+      return;
     }
   });
