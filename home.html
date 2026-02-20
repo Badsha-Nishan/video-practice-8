@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo | Home</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    Home page coming soon........
+  <body class="max-w-md pt-4 mx-auto bg-base-200 min-h-screen">
+    <header>
+      <nav>
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start w-[60px]">
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <div class="current-balance ml-4">
+            <h3 class="text-2xl font-bold">$45000</h3>
+            <p class="text-neutral-500">Available Balance</p>
+          </div>
+          <div class="navbar-end">
+            <a class="btn text-neutral-500">
+              <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+              Log Out</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heading-title"></div>
+    </main>
   </body>
 </html>
