@@ -21,8 +21,16 @@ function showButton(id) {
 const modal = document.getElementById("my_modal_2");
 const modalTitle = document.getElementById("title");
 const modalMessage = document.getElementById("msg");
-function openModal(title, message) {
+function openModal(title = "", message = "") {
   modalTitle.textContent = title;
   modalMessage.textContent = message;
   modal.showModal();
+}
+
+// Get sessionStorage
+
+const status = sessionStorage.getItem("showModal");
+if (status === "Login-Success") {
+  openModal("Login Successfully", "Welcome!");
+  sessionStorage.removeItem("showModal");
 }

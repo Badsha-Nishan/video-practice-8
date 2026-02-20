@@ -86,7 +86,28 @@
         </div>
       </section>
     </main>
+
+    <section class="modal">
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+          <h3 id="title" class="text-lg font-bold text-red-400"></h3>
+          <p id="msg" class="py-4"></p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </section>
+
     <script src="./login.js"></script>
-  
+    <script src="./machine.js"></script>
   </body>
 </html>
