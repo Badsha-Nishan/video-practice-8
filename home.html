@@ -38,7 +38,7 @@
   <body class="max-w-md pt-4 mx-auto bg-base-200 min-h-screen">
     <header>
       <nav>
-        <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar  shadow-sm">
           <div class="navbar-start w-[60px]">
             <img src="./assets/logo.png" alt="" />
           </div>
@@ -47,7 +47,7 @@
             <p class="text-neutral-500">Available Balance</p>
           </div>
           <div class="navbar-end">
-            <a class="btn text-neutral-500">
+            <a href="./index.html" class="btn text-neutral-500">
               <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
               Log Out</a
             >
@@ -56,15 +56,56 @@
       </nav>
     </header>
     <main>
-      <div class="heading-title pt-8 space-y-5 p-7">
-        <h1 class="font-bold text-2xl">
-          Welcome to Pay<span class="text-[#7460FF]">oo</span>
-        </h1>
-        <p class="text-neutral-500">
-          Enjoy easy and convenient financial services with us. Cashout charge
-          is low and
-        </p>
-      </div>
+      <section class="hero">
+        <div class="heading-title pt-8 space-y-5 p-7">
+          <h1 class="font-bold text-2xl">
+            Welcome to Pay<span class="text-[#7460FF]">oo</span>
+          </h1>
+          <p class="text-neutral-500">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+      </section>
+
+      <section id="buttons" class="buttons grid grid-cols-3 gap-4 w-11/12 mx-auto">
+        <button
+          class="btn flex-col py-12 rounded-xl btn-secondary btn-soft border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-1.png" alt="" />
+          <p class="text-neutral-500">Add Money</p>
+        </button>
+        <button
+          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-2.png" alt="" />
+          <p class="text-neutral-500">Cash Out</p>
+        </button>
+        <button
+          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-3.png" alt="" />
+          <p class="text-neutral-500">Transfer Money</p>
+        </button>
+        <button
+          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-4.png" alt="" />
+          <p class="text-neutral-500">Get Bonus</p>
+        </button>
+        <button
+          class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-5.png" alt="" />
+          <p class="text-neutral-500">Pay Bill</p>
+        </button>
+        <button
+          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+        >
+          <img src="./assets/opt-6.png" alt="" />
+          <p class="text-neutral-500">Transactions</p>
+        </button>
+      </section>
     </main>
   </body>
 </html>
