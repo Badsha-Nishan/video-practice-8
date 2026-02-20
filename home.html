@@ -74,8 +74,9 @@
         id="buttons"
         class="buttons grid grid-cols-3 gap-4 w-11/12 mx-auto"
       >
-        <button onclick="showButton('add-money-section')"
-        id="add-money"
+        <button
+          onclick="showButton('add-money-section')"
+          id="add-money"
           class="btn flex-col py-12 rounded-xl btn-secondary btn-soft border border-base-300 space-y-2"
         >
           <img src="./assets/opt-1.png" alt="" />
@@ -113,7 +114,10 @@
         </button>
       </section>
 
-      <section id="add-money-section" class="add-money w-11/12 mx-auto mt-9 hidden">
+      <section
+        id="add-money-section"
+        class="add-money w-11/12 mx-auto mt-9 hidden"
+      >
         <p class="text-2xl text-neutral mb-4">Add Money</p>
         <div class="card bg-base-100 shrink-0 shadow-2xl">
           <div class="card-body w-full">
@@ -173,6 +177,27 @@
             </fieldset>
           </div>
         </div>
+      </section>
+
+      
+      <section class="modal">
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+        <dialog id="my_modal_2" class="modal">
+          <div class="modal-box">
+            <h3 id="title" class="text-lg font-bold text-red-400"></h3>
+            <p id="msg" class="py-4"></p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
       </section>
     </main>
     <script src="./machine.js"></script>
