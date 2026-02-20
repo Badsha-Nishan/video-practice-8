@@ -38,7 +38,7 @@
   <body class="max-w-md pt-4 mx-auto bg-base-200 min-h-screen">
     <header>
       <nav>
-        <div class="navbar  shadow-sm">
+        <div class="navbar shadow-sm">
           <div class="navbar-start w-[60px]">
             <img src="./assets/logo.png" alt="" />
           </div>
@@ -68,7 +68,10 @@
         </div>
       </section>
 
-      <section id="buttons" class="buttons grid grid-cols-3 gap-4 w-11/12 mx-auto">
+      <section
+        id="buttons"
+        class="buttons grid grid-cols-3 gap-4 w-11/12 mx-auto"
+      >
         <button
           class="btn flex-col py-12 rounded-xl btn-secondary btn-soft border border-base-300 space-y-2"
         >
@@ -76,19 +79,19 @@
           <p class="text-neutral-500">Add Money</p>
         </button>
         <button
-          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+          class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-2.png" alt="" />
           <p class="text-neutral-500">Cash Out</p>
         </button>
         <button
-          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+          class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-3.png" alt="" />
           <p class="text-neutral-500">Transfer Money</p>
         </button>
         <button
-          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+          class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-4.png" alt="" />
           <p class="text-neutral-500">Get Bonus</p>
@@ -100,11 +103,81 @@
           <p class="text-neutral-500">Pay Bill</p>
         </button>
         <button
-          class="btn flex-col  py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
+          class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-6.png" alt="" />
           <p class="text-neutral-500">Transactions</p>
         </button>
+      </section>
+
+      <section class="add-money w-11/12 mx-auto mt-9">
+        <p class="text-2xl text-neutral mb-4">Add Money</p>
+        <div class="card bg-base-100 shrink-0 shadow-2xl">
+          <div class="card-body w-full">
+            <fieldset class="fieldset">
+              <label for="" class="text-xl">Select A Bank</label>
+              <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+              <button
+                class="btn rounded-full text-neutral-500"
+                popovertarget="popover-1"
+                style="anchor-name: --anchor-1"
+              >
+                Select Bank <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul
+                class="dropdown menu text-xl w-full max-w-xs rounded-box bg-base-200 shadow-sm"
+                popover
+                id="popover-1"
+                style="position-anchor: --anchor-1"
+              >
+                <li><a>Islami Bank Bangladesh PLC</a></li>
+                <li><a>DBBL</a></li>
+                <li><a>Sonali Bank PLC</a></li>
+                <li><a>Southeast Bank PLC</a></li>
+              </ul>
+              <br />
+              <label class="label text-black text-xl"
+                >Bank Account Number</label
+              >
+              <div class="flex items-center" id="target">
+                <input
+                  maxlength="11"
+                  minlength="11"
+                  type="text"
+                  id="number-input"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter 11 digit account number"
+                />
+              </div>
+              <br />
+              <label class="label text-black text-xl">Amount to Add</label>
+              <input
+                maxlength="4"
+                minlength="4"
+                id="pin"
+                type="password"
+                class="input rounded-full bg-base-200"
+                placeholder="Add Amount to withdraw"
+              />
+              <br />
+              <label class="label text-black text-xl">Pin Number</label>
+              <input
+                maxlength="4"
+                minlength="4"
+                id="pin"
+                type="password"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter 4 Digit Pin Number"
+              />
+              <button
+                id="login-btn"
+                class="btn btn-primary rounded-full mt-4 text-2xl py-7"
+              >
+                Add Money
+              </button>
+            </fieldset>
+          </div>
+        </div>
       </section>
     </main>
   </body>
