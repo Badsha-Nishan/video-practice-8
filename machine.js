@@ -11,9 +11,18 @@ function getElementFromInput(id) {
 // Toggle Button
 
 function showButton(id) {
-  const show = document.getElementById(id);
-  if (!show) return;
-  show.classList.toggle("hidden");
+  const addMoney = document.getElementById("add-money-section");
+  const cashout = document.getElementById("cashout-section");
+
+  addMoney.classList.add("hidden");
+  cashout.classList.add("hidden");
+
+  const selected = document.getElementById(id);
+  selected.classList.remove("hidden");
+  
+  //   const show = document.getElementById(id);
+  //   if (!show) return;
+  //   show.classList.toggle("hidden");
 }
 
 // For Modal
