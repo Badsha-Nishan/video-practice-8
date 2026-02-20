@@ -23,4 +23,5 @@ addMoneyBtn.addEventListener("click", () => {
     openModal("Wrong Pin!", "Please Provide Right Pin Number");
     return;
   }
+  openModal("Add Money Successfully");
 });
