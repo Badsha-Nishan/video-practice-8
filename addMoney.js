@@ -24,4 +24,15 @@ addMoneyBtn.addEventListener("click", () => {
     return;
   }
   openModal("Add Money Successfully");
+
+
+  // Transaction History 
+  
+  const history = document.getElementById("history-container");
+  const newHistory = document.createElement("div");
+  newHistory.innerHTML = `
+  <img src="./assets/opt-1.png" />
+  <h2 class="text-black/50 text-xl">Add Money Successfully from ${bank} amount of taka ${addAmount} at ${new Date().toLocaleString()} </h2>
+  `;
+  history.appendChild(newHistory);
 });

@@ -16,12 +16,14 @@ function showButton(id) {
   const transfer = document.getElementById("transfer-section");
   const bonus = document.getElementById("bonus-section");
   const payBill = document.getElementById("pay-bill-section");
+  const history = document.getElementById("history");
 
   addMoney.classList.add("hidden");
   cashout.classList.add("hidden");
   transfer.classList.add("hidden");
   bonus.classList.add("hidden");
   payBill.classList.add("hidden");
+  history.classList.add("hidden");
 
   const selected = document.getElementById(id);
   selected.classList.remove("hidden");

@@ -29,4 +29,14 @@ cashoutBtn.addEventListener("click", () => {
   }
   document.getElementById("current-balance").innerText = mainBalance;
   openModal("Congratulations", "Cashout Successfully");
+
+  // Transaction History
+
+  const history = document.getElementById("history-container");
+  const newHistory = document.createElement("div");
+  newHistory.innerHTML = `
+  <img src="./assets/opt-2.png" />
+  <h2 class="text-black/50 text-xl">Cashout Successfully to ${agentNumber} amount of taka ${cashoutAmount} at ${new Date().toLocaleString()} </h2>
+  `;
+  history.appendChild(newHistory);
 });

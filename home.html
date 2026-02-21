@@ -113,6 +113,7 @@
           <p class="text-neutral-500">Pay Bill</p>
         </button>
         <button
+          onclick="showButton('history')"
           class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-6.png" alt="" />
@@ -314,7 +315,10 @@
         </div>
       </section>
 
-      <section id="pay-bill-section" class="pay-bill w-11/12 mx-auto mt-9 hidden">
+      <section
+        id="pay-bill-section"
+        class="pay-bill w-11/12 mx-auto mt-9 hidden"
+      >
         <p class="text-2xl text-neutral mb-4">Pay Bill</p>
         <div class="card bg-base-100 shrink-0 shadow-2xl">
           <div class="card-body w-full">
@@ -374,6 +378,17 @@
             </fieldset>
           </div>
         </div>
+      </section>
+
+      <section
+        id="history"
+        class="transaction-section w-11/12 mx-auto mt-9 hidden"
+      >
+        <p class="text-2xl text-neutral mb-4">Transaction History</p>
+        <div
+          id="history-container"
+          class="history-container w-11/12 mx-auto mt-9 bg-base-100 p-6 space-y-4 rounded"
+        ></div>
       </section>
 
       <section class="modal">

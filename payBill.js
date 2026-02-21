@@ -32,4 +32,14 @@ payBillBtn.addEventListener("click", () => {
   const mainBalance = currentBalance - Number(payAmount);
   document.getElementById("current-balance").innerText = mainBalance;
   openModal("Pay Bill Successfully", "Congrats!!");
+
+  // Transaction History
+
+  const history = document.getElementById("history-container");
+  const newHistory = document.createElement("div");
+  newHistory.innerHTML = `
+  <img src="./assets/opt-5.png" />
+  <h2 class="text-black/50 text-xl">Pay Bill Successfully from ${bank} amount of taka ${payAmount} at ${new Date().toLocaleString()} </h2>
+  `;
+  history.appendChild(newHistory);
 });
