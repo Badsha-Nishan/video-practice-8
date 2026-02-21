@@ -91,6 +91,8 @@
           <p class="text-neutral-500">Cash Out</p>
         </button>
         <button
+          onclick="showButton('transfer-section')"
+          id="transfer"
           class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-3.png" alt="" />
@@ -229,6 +231,56 @@
         </div>
       </section>
 
+      <section
+        id="transfer-section"
+        class="transfer-money w-11/12 mx-auto mt-9 hidden"
+      >
+        <p class="text-2xl text-neutral mb-4">Transfer Money</p>
+        <div class="card bg-base-100 shrink-0 shadow-2xl">
+          <div class="card-body w-full">
+            <fieldset class="fieldset">
+              <label class="label text-black text-xl"
+                >User Account Number</label
+              >
+              <div class="flex items-center" id="target">
+                <input
+                  maxlength="11"
+                  minlength="11"
+                  type="text"
+                  id="user-number"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter 11 digit number"
+                />
+              </div>
+              <br />
+              <label class="label text-black text-xl">Amount</label>
+              <input
+                id="transfer-amount"
+                type="text"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter Amount to transfer"
+              />
+              <br />
+              <label class="label text-black text-xl">Pin Number</label>
+              <input
+                maxlength="4"
+                minlength="4"
+                id="transfer-pin"
+                type="password"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter 4 Digit Pin Number"
+              />
+              <button
+                id="transfer-btn"
+                class="btn btn-primary rounded-full mt-4 text-2xl py-7"
+              >
+                Send Now
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
       <section class="modal">
         <!-- Open the modal using ID.showModal() method -->
         <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
@@ -252,5 +304,6 @@
     <script src="./machine.js"></script>
     <script src="./addMoney.js"></script>
     <script src="./cashout.js"></script>
+    <script src="./transfer.js"></script>
   </body>
 </html>
