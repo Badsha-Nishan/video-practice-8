@@ -106,6 +106,7 @@
           <p class="text-neutral-500">Get Bonus</p>
         </button>
         <button
+          onclick="showButton('pay-bill-section')"
           class="btn flex-col py-12 btn-secondary btn-soft rounded-xl border border-base-300 space-y-2"
         >
           <img src="./assets/opt-5.png" alt="" />
@@ -313,6 +314,68 @@
         </div>
       </section>
 
+      <section id="pay-bill-section" class="pay-bill w-11/12 mx-auto mt-9 hidden">
+        <p class="text-2xl text-neutral mb-4">Pay Bill</p>
+        <div class="card bg-base-100 shrink-0 shadow-2xl">
+          <div class="card-body w-full">
+            <fieldset class="fieldset">
+              <label for="" class="text-xl">Select To Pay</label>
+              <!-- change popover-1 and --anchor-1 names. Use unique names for each dropdown -->
+              <select
+                name="select"
+                id="select-bank-pay"
+                class="rounded-full border border-gray-400 p-2 text-lg text-gray-400 bg-base-200"
+              >
+                <option selected disabled value="select bank">
+                  select bank
+                </option>
+                <option value="Islami Bank PLC">Islami Bank PLC</option>
+                <option value="Sonali Bank PLC">Sonali Bank PLC</option>
+                <option value="Southeast Bank PLC">Southeast Bank PLC</option>
+              </select>
+              <br />
+              <label class="label text-black text-xl"
+                >Biller Account Number</label
+              >
+              <div class="flex items-center" id="target">
+                <input
+                  maxlength="11"
+                  minlength="11"
+                  type="text"
+                  id="biller-account-number"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter account number"
+                />
+              </div>
+              <br />
+              <label class="label text-black text-xl">Amount to Pay</label>
+              <input
+                id="pay-amount"
+                type="text"
+                class="input rounded-full bg-base-200"
+                placeholder="Add Amount to pay"
+              />
+              <br />
+              <label class="label text-black text-xl">Pin Number</label>
+              <input
+                maxlength="4"
+                minlength="4"
+                id="pay-pin"
+                type="password"
+                class="input rounded-full bg-base-200"
+                placeholder="Enter 4 Digit Pin Number"
+              />
+              <button
+                id="pay-bill-btn"
+                class="btn btn-primary rounded-full mt-4 text-2xl py-7"
+              >
+                Pay Now
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
       <section class="modal">
         <!-- Open the modal using ID.showModal() method -->
         <button class="btn" onclick="my_modal_2.showModal()">open modal</button>
@@ -337,5 +400,6 @@
     <script src="./addMoney.js"></script>
     <script src="./cashout.js"></script>
     <script src="./transfer.js"></script>
+    <script src="./payBill.js"></script>
   </body>
 </html>
