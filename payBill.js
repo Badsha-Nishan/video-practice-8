@@ -31,7 +31,7 @@ payBillBtn.addEventListener("click", () => {
   }
   const mainBalance = currentBalance - Number(payAmount);
   document.getElementById("current-balance").innerText = mainBalance;
-  openModal("Pay Bill Successfully", "Congrats!!");
+  openModal("I Love You K+B", "Congrats!!");
 
   // Transaction History
 
