@@ -14,10 +14,12 @@ function showButton(id) {
   const addMoney = document.getElementById("add-money-section");
   const cashout = document.getElementById("cashout-section");
   const transfer = document.getElementById("transfer-section");
+  const bonus = document.getElementById("bonus-section");
 
   addMoney.classList.add("hidden");
   cashout.classList.add("hidden");
   transfer.classList.add("hidden");
+  bonus.classList.add("hidden");
 
   const selected = document.getElementById(id);
   selected.classList.remove("hidden");

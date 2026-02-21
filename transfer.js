@@ -24,3 +24,20 @@ transferMoney.addEventListener("click", () => {
   document.getElementById("current-balance").innerText = restBalance;
   openModal("Transfer Successfully", "Done!");
 });
+
+// Get Bonus Section
+
+const bonus = document.getElementById("bonus-btn");
+
+bonus.addEventListener("click", () => {
+  const coupon = getValueFromInput("coupon-number");
+  if (coupon === "12345") {
+    openModal("Congratulation!!", "You have got the bonus");
+    const bonus = 1000;
+    const mainBalance = getElementFromInput("current-balance");
+    const restBalance = mainBalance + bonus;
+    document.getElementById("current-balance").innerText = restBalance;
+  } else {
+    openModal("Wrong Coupon", "Enter the right coupon number");
+  }
+});
